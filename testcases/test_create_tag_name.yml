@@ -1,0 +1,13 @@
+- config:
+    name: 创建标签
+    base_url: ${ENV(URL)}
+
+- test:
+    name: get-token
+    testcase: testcases/test_get_token.yml   # 调用上一个接口的参数
+    extract:
+      - token  # 获取token
+
+- test:
+    name: tag_name # 测试用例的名称
+    api: api/create_tag_names.yml

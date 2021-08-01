@@ -1,0 +1,17 @@
+config:
+  name: 执行测试套件
+
+testcases:
+  test_case01:
+    testcase: testcases/test_create_tag_name.yml
+
+    variables:  # 单个数据参数化
+      tagname: "zx11xx"
+
+    validate:
+      - eq : [content.tag.name,zx11xx]
+      - eq : ["status_code",200]
+
+
+  test_case02:
+    testcase: testcases/test_get_token.yml

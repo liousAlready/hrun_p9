@@ -1,0 +1,43 @@
+config:
+  name: 执行测试套件
+
+testcases:
+
+#    test_case01:
+#      testcase: testcases/test_create_tag_name.yml
+#      parameters: # 多个数据参数化
+#        tagname: [ "1aaadz","123123asdas","zxc1123" ]
+#      validate:
+#        - eq: [ "status_code",200 ]
+
+    test_case002:
+      testcase: testcases/test_baidu_search.yml
+#      parameters:
+#        # csv中的数据有多行，所以好使用parameters关键词
+#        # csv文件中的一行的表透明要与变量名相同
+#        keyword: ${P(/Users/lishouwu/PycharmProjects/hrun_p9/data/data.csv)}
+  #
+  #  test_case001:
+  #    testcase: testcases/test_get_token.yml
+
+#  test_case02:
+#    testcase: testcases/test_baidu_search.yml
+#
+#    variables:
+#      keywork: ${get_phone()}
+
+    #    parameters: # 多个数据参数化
+    #      keyword-kw: [ [ "123","456","789" ],[ "asd","zzx","qqwe" ] ]
+    #    通过debugtalk.py写代码，来进行参数化
+#    parameters:
+#      keyword: ${keylist()}
+
+#  test_case03:
+#    testcase: testcases/test_baidu_search.yml
+##    variables:
+##       keyword: ${get_phone()}
+#    parameters:
+#        keyword-kw: [["newdream123456789","hello"],['newdream1234567890','world']]
+##   通过debugtalk.py 写代码的方式，来进行参数化
+##    variables:
+##      keyword: ${keyword()}

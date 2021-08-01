@@ -1,0 +1,10 @@
+name: "获取token值"
+base_url: ${ENV(URL)}
+
+request:
+  url: /cgi-bin/token
+  method: GET
+  params:
+    grant_type: client_credential
+    appid: wxb637f897f0bf1f0d
+    secret: 501123d2d367b109a5cb9a9011d0f084

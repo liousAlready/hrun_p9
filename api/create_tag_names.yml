@@ -1,0 +1,8 @@
+name: creat_tag
+base_url: ${ENV(URL)}  #  ${ENV(变量名)}  获取配置文件中的数据
+request:
+  url: /cgi-bin/tags/create
+  method: POST
+  params:
+    access_token: $token
+  json: { "tag": { "name": $tagname } }

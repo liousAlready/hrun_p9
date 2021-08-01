@@ -1,0 +1,14 @@
+- config:
+    name: 测试获取token
+    export:
+      - token
+
+- test:
+    name: get_token
+    api: api/get_access_token.yml
+
+
+    extract:
+      token: content.access_token
+    validate:
+      - eq: [ content.expires_in,7200 ]

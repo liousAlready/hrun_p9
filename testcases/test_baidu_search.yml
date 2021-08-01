@@ -1,0 +1,11 @@
+- config:
+    name: 百度搜索
+
+- test:
+    name: baidu_search
+    api: api/baidu_search.yml
+    times: 5
+    variables:
+        keyword: othhzs
+
+#

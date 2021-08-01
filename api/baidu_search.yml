@@ -1,0 +1,18 @@
+name: "百度搜索"
+base_url: "http://www.baidu.com"
+
+request:
+  url: /s
+  method: GET
+  headers:
+    User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+    Accept: "text/plain, */*; q=0.01"
+    Accept-Encoding: "gzip, deflate, br"
+    Accept-Language: "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"
+    Connection: "keep-alive"
+  params:
+    wd: $keyword  #  引用debugtalk.py 文件中的函数
+#    kw: $kw
+
+extract: # 自定义正则
+  - title: "<title>(.+?)</title>"  # 定义一个变量，通过正则取值

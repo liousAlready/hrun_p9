@@ -1,0 +1,7 @@
+{
+    "testcase":[
+        "testcases/test_create_tag_name.yml",
+        "testcases/test_create_tag_name.yml",
+        "testcases/test_create_tag_name.yml"
+    ]
+}
